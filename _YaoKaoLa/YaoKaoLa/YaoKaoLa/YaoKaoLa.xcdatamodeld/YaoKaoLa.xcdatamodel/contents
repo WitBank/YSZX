@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C81f" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ZHCourseChapterDownloadManage" representedClassName="ZHCourseChapterDownloadManage" isAbstract="YES" syncable="YES">
+        <attribute name="acntNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="examinationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDownload" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ZHCourseChapterManage" representedClassName="ZHCourseChapterManage" isAbstract="YES" syncable="YES">
+        <attribute name="acntNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="examinationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ZHCourseRootSourseManage" representedClassName="ZHCourseRootSourseManage" isAbstract="YES" syncable="YES">
+        <attribute name="acntNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teacher" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoCount" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ZHCourseChapterDownloadManage" positionX="-36" positionY="81" width="128" height="178"/>
+        <element name="ZHCourseChapterManage" positionX="-54" positionY="45" width="128" height="148"/>
+        <element name="ZHCourseRootSourseManage" positionX="-63" positionY="-18" width="128" height="163"/>
+    </elements>
+</model>

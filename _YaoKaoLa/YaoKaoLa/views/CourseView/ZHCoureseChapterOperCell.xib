@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZHCoureseChapterOperCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI2-fd-Pem" userLabel="播放Button">
+                        <rect key="frame" x="0.0" y="10" width="80" height="30"/>
+                        <state key="normal" image="ZH_CourseDetail_Play.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RHo-Ak-wAx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUb-Ch-JIX" userLabel="下载Button">
+                        <rect key="frame" x="80" y="12" width="80" height="30"/>
+                        <state key="normal" image="ZH_CourseDetail_Download_hui.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PZI-b0-mi9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpC-rf-zxs" userLabel="练习Button">
+                        <rect key="frame" x="160" y="10" width="80" height="30"/>
+                        <state key="normal" image="ZH_CourseDetail_Practice.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jkw-pr-dQe"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luL-hh-ESi" userLabel="收藏Button">
+                        <rect key="frame" x="240" y="10" width="80" height="30"/>
+                        <state key="normal" image="ZH_CourseDetail_Collection_hui.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ebz-Yy-oPj"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D3-Gy-fvX">
+                        <rect key="frame" x="0.0" y="40" width="80" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="JWh-4W-9FM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CB-ti-9th">
+                        <rect key="frame" x="80" y="40" width="80" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="ggH-hi-Pzm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参加练习" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aQ-0X-jDn">
+                        <rect key="frame" x="160" y="40" width="80" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="guP-qI-xPH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XU-WG-uxW">
+                        <rect key="frame" x="240" y="40" width="80" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="dOF-HA-sCd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="bottom" secondItem="1CB-ti-9th" secondAttribute="bottom" id="1Wz-1s-Qhv"/>
+                    <constraint firstItem="1D3-Gy-fvX" firstAttribute="top" secondItem="lI2-fd-Pem" secondAttribute="bottom" id="1ic-jf-UiM"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="width" secondItem="lI2-fd-Pem" secondAttribute="width" id="3A4-0M-Q89"/>
+                    <constraint firstItem="6aQ-0X-jDn" firstAttribute="top" secondItem="mpC-rf-zxs" secondAttribute="bottom" id="5Kd-vi-c81"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="leading" secondItem="lI2-fd-Pem" secondAttribute="trailing" id="5u4-Vl-O59"/>
+                    <constraint firstItem="lI2-fd-Pem" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5vb-SO-byF"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="height" secondItem="lI2-fd-Pem" secondAttribute="height" id="7F1-Ef-a3E"/>
+                    <constraint firstItem="1CB-ti-9th" firstAttribute="top" secondItem="YUb-Ch-JIX" secondAttribute="bottom" constant="-2" id="86V-5P-GPy"/>
+                    <constraint firstItem="luL-hh-ESi" firstAttribute="leading" secondItem="mpC-rf-zxs" secondAttribute="trailing" id="8BI-Ne-6Z5"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="top" secondItem="lI2-fd-Pem" secondAttribute="top" constant="2" id="8ex-0f-tmF"/>
+                    <constraint firstItem="1CB-ti-9th" firstAttribute="top" secondItem="YUb-Ch-JIX" secondAttribute="bottom" constant="-2" id="9yb-n7-X1N"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="width" secondItem="1CB-ti-9th" secondAttribute="width" id="Aad-ZD-Fs1"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="leading" secondItem="6aQ-0X-jDn" secondAttribute="trailing" id="Afv-aC-pBx"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="height" secondItem="mpC-rf-zxs" secondAttribute="height" id="BE7-cY-s3j"/>
+                    <constraint firstAttribute="bottom" secondItem="0XU-WG-uxW" secondAttribute="bottom" constant="6.5" id="BbP-lh-Ev3"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="bottom" secondItem="luL-hh-ESi" secondAttribute="bottom" constant="2" id="Bdi-5H-NOZ"/>
+                    <constraint firstAttribute="bottom" secondItem="1D3-Gy-fvX" secondAttribute="bottom" constant="6.5" id="E5Q-3T-svO"/>
+                    <constraint firstAttribute="bottom" secondItem="1CB-ti-9th" secondAttribute="bottom" constant="6.5" id="GEr-Ty-IGb"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="bottom" secondItem="lI2-fd-Pem" secondAttribute="bottom" constant="2" id="Jn2-EC-Gbo"/>
+                    <constraint firstItem="mpC-rf-zxs" firstAttribute="leading" secondItem="YUb-Ch-JIX" secondAttribute="trailing" id="L9i-7R-b8D"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="width" secondItem="1D3-Gy-fvX" secondAttribute="width" id="Nh8-8I-5tb"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="top" secondItem="luL-hh-ESi" secondAttribute="bottom" id="QLr-fx-fHv"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="top" secondItem="luL-hh-ESi" secondAttribute="bottom" id="RPO-ng-DYg"/>
+                    <constraint firstItem="6aQ-0X-jDn" firstAttribute="leading" secondItem="1CB-ti-9th" secondAttribute="trailing" id="TBd-pL-vtH"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="URS-hG-re2"/>
+                    <constraint firstItem="luL-hh-ESi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UcX-bD-pFI"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="top" secondItem="6aQ-0X-jDn" secondAttribute="top" id="V7g-Nb-Po4"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="width" secondItem="mpC-rf-zxs" secondAttribute="width" id="W3K-rE-9au"/>
+                    <constraint firstItem="1D3-Gy-fvX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WLY-KC-cE2"/>
+                    <constraint firstAttribute="bottom" secondItem="1D3-Gy-fvX" secondAttribute="bottom" constant="6.5" id="XCl-Oa-A4C"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="height" secondItem="luL-hh-ESi" secondAttribute="height" id="YJU-sg-ruZ"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="width" secondItem="luL-hh-ESi" secondAttribute="width" id="cyo-Gc-WHN"/>
+                    <constraint firstItem="1CB-ti-9th" firstAttribute="leading" secondItem="1D3-Gy-fvX" secondAttribute="trailing" id="eFB-hi-ahX"/>
+                    <constraint firstAttribute="trailing" secondItem="0XU-WG-uxW" secondAttribute="trailing" id="eKx-1C-pP9"/>
+                    <constraint firstItem="1D3-Gy-fvX" firstAttribute="top" secondItem="lI2-fd-Pem" secondAttribute="bottom" id="efv-HJ-uKv"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="top" secondItem="mpC-rf-zxs" secondAttribute="top" constant="2" id="fXJ-vL-sun"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="leading" secondItem="lI2-fd-Pem" secondAttribute="trailing" id="gIS-DY-NE7"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="bottom" secondItem="6aQ-0X-jDn" secondAttribute="bottom" id="hGb-mm-UON"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="top" secondItem="1D3-Gy-fvX" secondAttribute="top" id="j25-FO-n4a"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="top" secondItem="1CB-ti-9th" secondAttribute="top" id="mvu-QR-n0M"/>
+                    <constraint firstItem="1CB-ti-9th" firstAttribute="leading" secondItem="1D3-Gy-fvX" secondAttribute="trailing" id="nHa-H7-873"/>
+                    <constraint firstAttribute="bottom" secondItem="0XU-WG-uxW" secondAttribute="bottom" constant="6.5" id="oty-Vu-L9V"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="leading" secondItem="6aQ-0X-jDn" secondAttribute="trailing" id="peW-j3-Se0"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="height" secondItem="1CB-ti-9th" secondAttribute="height" id="r2q-8k-rib"/>
+                    <constraint firstAttribute="bottom" secondItem="6aQ-0X-jDn" secondAttribute="bottom" constant="6.5" id="rnv-5i-ZYC"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="height" secondItem="1D3-Gy-fvX" secondAttribute="height" id="sWl-Z8-XXA"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="bottom" secondItem="1D3-Gy-fvX" secondAttribute="bottom" id="tDI-oF-dOC"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="height" secondItem="6aQ-0X-jDn" secondAttribute="height" id="uUz-gP-M4v"/>
+                    <constraint firstItem="0XU-WG-uxW" firstAttribute="width" secondItem="6aQ-0X-jDn" secondAttribute="width" id="vzP-gM-Uh9"/>
+                    <constraint firstItem="6aQ-0X-jDn" firstAttribute="leading" secondItem="1CB-ti-9th" secondAttribute="trailing" id="wBD-nT-Ba4"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="bottom" secondItem="mpC-rf-zxs" secondAttribute="bottom" constant="2" id="wLG-5e-vGa"/>
+                    <constraint firstItem="lI2-fd-Pem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xeg-6K-tPj"/>
+                    <constraint firstAttribute="trailing" secondItem="luL-hh-ESi" secondAttribute="trailing" id="xxq-SU-Hrg"/>
+                    <constraint firstItem="YUb-Ch-JIX" firstAttribute="top" secondItem="luL-hh-ESi" secondAttribute="top" constant="2" id="ys1-b6-Hj0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="operCollectionButton" destination="luL-hh-ESi" id="fTC-Nq-yfd"/>
+                <outlet property="operDownloadButton" destination="YUb-Ch-JIX" id="xNd-SP-5RB"/>
+                <outlet property="operPlayButton" destination="lI2-fd-Pem" id="OR8-yL-dSO"/>
+                <outlet property="operPracticeButton" destination="mpC-rf-zxs" id="dmO-dD-Au0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ZH_CourseDetail_Collection_hui.png" width="34" height="34"/>
+        <image name="ZH_CourseDetail_Download_hui.png" width="34" height="34"/>
+        <image name="ZH_CourseDetail_Play.png" width="34" height="34"/>
+        <image name="ZH_CourseDetail_Practice.png" width="34" height="34"/>
+    </resources>
+</document>

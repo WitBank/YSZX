@@ -1,0 +1,12 @@
+<v:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:d="http://www.w3.org/2001/XMLSchema" xmlns:c="http://schemas.xmlsoap.org/soap/encoding/" xmlns:v="http://schemas.xmlsoap.org/soap/envelope/">
+    <v:Header />
+    <v:Body>
+        <GetData xmlns="http://www.witbank.com.cn" id="o0" c:root="1">
+            <pageXml i:type="d:string">_pageXml</pageXml>
+            <whereXml i:type="d:string">_whereXml</whereXml>
+            <pageType i:type="d:string">_pageType</pageType>
+            <funtionType i:type="d:string">_functionType</funtionType>
+            <dataType i:type="d:string">_dataType</dataType>
+        </GetData>
+    </v:Body>
+</v:Envelope>

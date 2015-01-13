@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="403" contentMode="scaleToFill" id="iN0-l3-epB" customClass="InformationTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="401" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOC-d9-MLE">
+                    <rect key="frame" x="0.0" y="0.0" width="106" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="考点直击">
+                        <color key="titleColor" red="0.1803921568627451" green="0.64313725490196083" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="vbQ-zh-sUk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="402" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVs-Yz-3jX">
+                    <rect key="frame" x="107" y="0.0" width="106" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="报考须知">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="HAk-82-VkR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-ad-12c">
+                    <rect key="frame" x="214" y="0.0" width="106" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="最新动态">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="aII-hu-tUn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="height" secondItem="AVs-Yz-3jX" secondAttribute="height" id="7IJ-UZ-Sv5"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="leading" secondItem="AVs-Yz-3jX" secondAttribute="trailing" constant="1" id="9eH-Re-JFX"/>
+                <constraint firstItem="jOC-d9-MLE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bv2-Af-vsa"/>
+                <constraint firstAttribute="bottom" secondItem="AVs-Yz-3jX" secondAttribute="bottom" id="ClC-tK-vPh"/>
+                <constraint firstItem="AVs-Yz-3jX" firstAttribute="leading" secondItem="jOC-d9-MLE" secondAttribute="trailing" constant="1" id="Cp3-9e-Oqc"/>
+                <constraint firstAttribute="bottom" secondItem="oyc-ad-12c" secondAttribute="bottom" id="ELm-fB-R40"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="leading" secondItem="AVs-Yz-3jX" secondAttribute="trailing" constant="1" id="HB0-CU-THL"/>
+                <constraint firstItem="jOC-d9-MLE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hfw-vj-Uyi"/>
+                <constraint firstAttribute="bottom" secondItem="jOC-d9-MLE" secondAttribute="bottom" id="LjP-Cr-5GP"/>
+                <constraint firstAttribute="trailing" secondItem="oyc-ad-12c" secondAttribute="trailing" id="MJK-35-ODa"/>
+                <constraint firstItem="AVs-Yz-3jX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RFn-Io-rl9"/>
+                <constraint firstItem="AVs-Yz-3jX" firstAttribute="leading" secondItem="jOC-d9-MLE" secondAttribute="trailing" constant="1" id="apf-4l-uqF"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="width" secondItem="AVs-Yz-3jX" secondAttribute="width" id="h3r-2g-tHr"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="width" secondItem="jOC-d9-MLE" secondAttribute="width" id="klC-rI-H2R"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wWa-YW-Aql"/>
+                <constraint firstItem="oyc-ad-12c" firstAttribute="height" secondItem="jOC-d9-MLE" secondAttribute="height" id="zUT-5x-kHz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centerButton" destination="AVs-Yz-3jX" id="EG9-CF-1WK"/>
+                <outlet property="leftButton" destination="jOC-d9-MLE" id="kqz-JI-kEk"/>
+                <outlet property="rightButton" destination="oyc-ad-12c" id="qXO-ch-nwn"/>
+            </connections>
+        </view>
+    </objects>
+</document>
